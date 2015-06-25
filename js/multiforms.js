@@ -6,6 +6,7 @@ $(function(){
     current_fs = $(this).closest('fieldset');
     next_fs = current_fs.next();
     $('.progressbar li').eq($('fieldset').index(next_fs)).addClass('active');
+    current_fs.hide();
     console.log(next_fs);
     next_fs.show();
   });
